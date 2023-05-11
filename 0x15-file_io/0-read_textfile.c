@@ -2,10 +2,13 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - Print to STDOUT.
+ * read_textfile-fuction that read a text file and print it out the POSIX std
+ * out
  * @filename :text file being read
- * @letters : Numberof letters to reads and prints
- * Return : ....
+ * @letters :Number of letters to read
+ *
+ * Return :w-actual number of bytes read and printed
+ *         0 when function fails or filename is NULL
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
